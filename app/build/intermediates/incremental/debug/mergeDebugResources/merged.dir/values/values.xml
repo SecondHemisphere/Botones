@@ -30,6 +30,10 @@
     <string name="content_reset_counter">Botón para poner el contador a cero</string>
     <string name="counter_label">Participaciones registradas: %1$d</string>
     <string name="default_student">estudiante</string>
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="dialog_confirm">Sí, reiniciar</string>
+    <string name="dialog_reset_message">¿Deseas borrar todas las participaciones registradas?</string>
+    <string name="dialog_reset_title">Confirmar reinicio</string>
     <string name="hint_name">Escriba su nombre</string>
     <string name="image_actions_title">Acciones con ImageButton</string>
     <string name="label_name">Nombre del estudiante</string>

@@ -52,6 +52,10 @@ int string content_icon_app 0x7f060004
 int string content_reset_counter 0x7f060005
 int string counter_label 0x7f060006
 int string default_student 0x7f060007
+int string dialog_cancel 0x7f06001f
+int string dialog_confirm 0x7f060020
+int string dialog_reset_message 0x7f060021
+int string dialog_reset_title 0x7f060022
 int string hint_name 0x7f060008
 int string image_actions_title 0x7f060009
 int string label_name 0x7f06000a

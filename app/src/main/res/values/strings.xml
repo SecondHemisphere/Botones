@@ -39,4 +39,10 @@
 
     <!-- Actividad 6: contador con limite -->
     <string name="status_counter_limit">Se ha alcanzado el límite de 10 participaciones.</string>
+
+    <!-- Actividad extra: diálogo de confirmación al reiniciar-->
+    <string name="dialog_reset_title">Confirmar reinicio</string>
+    <string name="dialog_reset_message">¿Deseas borrar todas las participaciones registradas?</string>
+    <string name="dialog_confirm">Sí, reiniciar</string>
+    <string name="dialog_cancel">Cancelar</string>
 </resources>

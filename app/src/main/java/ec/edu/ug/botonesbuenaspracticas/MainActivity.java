@@ -136,12 +136,26 @@ public class MainActivity extends Activity {
     }
 
     private void onResetCounterClicked(View view) {
-        participationCounter = 0;
-        String never = getString(R.string.last_participation_never);
-        saveCounter(never);
-        refreshCounterText();
-        tvLastDate.setText(never);
-        showStatus(getString(R.string.status_counter_reset));
+        // Creo una alerta para que no se borre por accidente
+        new android.app.AlertDialog.Builder(this)
+                .setTitle(R.string.dialog_reset_title)
+                .setMessage(R.string.dialog_reset_message)
+                .setPositiveButton(R.string.dialog_confirm, (dialog, which) -> {
+
+                    // Primero pongo el contador en 0 para que se resetee de verdad
+                    participationCounter = 0;
+                    String never = getString(R.string.last_participation_never);
+
+                    // Mando a guardar el 0 y el texto de "Nunca" a la memoria
+                    saveCounter(never);
+
+                    // Actualizo lo que se ve en la pantalla
+                    refreshCounterText();
+                    tvLastDate.setText(never);
+                    showStatus(getString(R.string.status_counter_reset));
+                })
+                .setNegativeButton(R.string.dialog_cancel, null) // Si cancela, no pasa nada
+                .show();
     }
 
     private void saveCounter(String date) {

@@ -54,6 +54,10 @@ string content_icon_app
 string content_reset_counter
 string counter_label
 string default_student
+string dialog_cancel
+string dialog_confirm
+string dialog_reset_message
+string dialog_reset_title
 string hint_name
 string image_actions_title
 string label_name
