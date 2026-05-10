@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Botones Buenas Prácticas</string>
+    <string name="screen_title">1.5.4 Botones en Android</string>
+    <string name="screen_subtitle">Ejemplo con Button, ToggleButton e ImageButton</string>
+    <string name="objective_title">Objetivo del ejemplo</string>
+    <string name="objective_text">Diferenciar botones comunes, manejar eventos con setOnClickListener y aplicar buenas prácticas de recursos, accesibilidad y persistencia simple.</string>
+    <string name="label_name">Nombre del estudiante</string>
+    <string name="hint_name">Escriba su nombre</string>
+    <string name="button_greet">Mostrar mensaje</string>
+
+    <string name="toggle_on">Modo clase: ON</string>
+    <string name="toggle_off">Modo clase: OFF</string>
+    <string name="image_actions_title">Acciones con ImageButton</string>
+    <string name="counter_label">Participaciones registradas: %1$d</string>
+    <string name="status_initial">Estado: listo para interactuar con los botones.</string>
+    <string name="status_greeting">Hola, %1$s. Evento ejecutado desde un Button.</string>
+    <string name="status_empty_name">Ingrese un nombre antes de mostrar el mensaje.</string>
+    <string name="status_toggle_enabled">Modo clase activado. El estado quedó guardado.</string>
+    <string name="status_toggle_disabled">Modo clase desactivado. El estado quedó guardado.</string>
+    <string name="status_counter_plus">Se registró una participación. Total: %1$d.</string>
+    <string name="status_counter_reset">El contador fue reiniciado.</string>
+    <string name="default_student">estudiante</string>
+    <string name="content_add_participation">Registrar una participación</string>
+    <string name="content_reset_counter">Reiniciar contador de participaciones</string>
+    <string name="content_icon_app">Ícono académico de la aplicación</string>
+
+    <!-- Actividad 2: agregar boton mostrar objetivo -->
+    <string name="button_objetivo">Mostrar objetivo</string>
+    <string name="objective_default">Presiona el botón de abajo para revelar el objetivo del tema.</string>
+    <string name="status_objective_loaded">Objetivo cargado correctamente.</string>
+
+    <!-- Actividad 4: validar longitud minima del nombre -->
+    <string name="status_error_name_short">El nombre debe tener al menos 3 caracteres.</string>
+
+    <!-- Actividad 5: registrar fecha de la ultima participacion -->
+    <string name="last_participation_label">Última: %1$s</string>
+    <string name="last_participation_never">Última: Nunca</string>
+
+    <!-- Actividad 6: contador con limite -->
+    <string name="status_counter_limit">Se ha alcanzado el límite de 10 participaciones.</string>
+</resources>

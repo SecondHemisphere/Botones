@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_lg">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/screen_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/title_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xs"
+                android:text="@string/screen_subtitle"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/subtitle_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_md">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/objective_title"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/body_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvObjectiveDisplay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:text="@string/objective_default"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="@dimen/body_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNameLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/etStudentName"
+                    android:text="@string/label_name"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/body_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etStudentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:autofillHints="name"
+                    android:background="@drawable/bg_edit_text"
+                    android:hint="@string/hint_name"
+                    android:inputType="textPersonName"
+                    android:minHeight="@dimen/button_min_height"
+                    android:singleLine="true"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_secondary"
+                    tools:ignore="LabelFor" />
+
+                <Button
+                    android:id="@+id/btnGreet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_md"
+                    android:background="@drawable/bg_primary_button"
+                    android:minHeight="@dimen/button_min_height"
+                    android:text="@string/button_greet"
+                    android:textAllCaps="false"
+                    android:textColor="@color/button_text" />
+
+                <!-- boton mostrar objetivo agregado -->
+                <Button
+                    android:id="@+id/btnMostrarObjetivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/bg_primary_button"
+                    android:minHeight="48dp"
+                    android:text="@string/button_objetivo"
+                    android:textAllCaps="false"
+                    android:textColor="@color/button_text" />
+
+                <!-- switch reemplaza a toggle button -->
+                <Switch
+                    android:id="@+id/switchClassMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_md"
+                    android:minHeight="@dimen/button_min_height"
+                    android:text="@string/toggle_off"
+                    android:textColor="@color/text_primary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/image_actions_title"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/body_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvCounter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="@dimen/body_size" />
+
+                <!-- campo para mostrar la fecha y hora de la ultima participacion -->
+                <TextView
+                    android:id="@+id/tvLastDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xs"
+                    android:text="@string/last_participation_never"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_md"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/ibAddParticipation"
+                        android:layout_width="@dimen/image_button_size"
+                        android:layout_height="@dimen/image_button_size"
+                        android:background="@drawable/bg_image_button"
+                        android:contentDescription="@string/content_add_participation"
+                        android:padding="@dimen/spacing_md"
+                        android:src="@drawable/ic_add_24" />
+
+                    <ImageButton
+                        android:id="@+id/ibResetCounter"
+                        android:layout_width="@dimen/image_button_size"
+                        android:layout_height="@dimen/image_button_size"
+                        android:layout_marginStart="@dimen/spacing_md"
+                        android:background="@drawable/bg_image_button"
+                        android:contentDescription="@string/content_reset_counter"
+                        android:padding="@dimen/spacing_md"
+                        android:src="@drawable/ic_restart_24" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md"
+                android:background="@drawable/bg_status"
+                android:text="@string/status_initial"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/body_size" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

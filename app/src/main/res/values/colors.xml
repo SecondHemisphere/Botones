@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ug_blue">#0000FF</color> <!-- el color fue cambiado a color azul real -->
+    <color name="ug_blue_dark">#002B4F</color>
+    <color name="screen_background">#F4F7FB</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="text_primary">#1F2937</color>
+    <color name="text_secondary">#4B5563</color>
+    <color name="border_soft">#D8E2EF</color>
+    <color name="success_background">#E8F5E9</color>
+    <color name="success_border">#81C784</color>
+    <color name="info_background">#E3F2FD</color>
+    <color name="button_text">#FFFFFF</color>
+    <color name="image_button_background">#EAF2FA</color>
+</resources>
