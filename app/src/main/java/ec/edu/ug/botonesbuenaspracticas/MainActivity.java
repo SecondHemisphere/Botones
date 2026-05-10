@@ -13,16 +13,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Switch;
 
-/**
- * MainActivity demuestra el uso correcto de Button, ToggleButton e ImageButton.
- * <p>
- * Buenas prácticas aplicadas:
- * 1. Los textos visibles están en strings.xml.
- * 2. Los colores y dimensiones están separados en archivos de recursos.
- * 3. Los ImageButton tienen contentDescription para accesibilidad.
- * 4. Los eventos se registran desde Java con setOnClickListener.
- * 5. El estado del ToggleButton y el contador se guardan con SharedPreferences.
- */
 public class MainActivity extends Activity {
 
     private static final String PREFS_NAME = "button_demo_preferences";
